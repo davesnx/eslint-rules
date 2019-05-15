@@ -1,5 +1,5 @@
 {
-  "name": "davesnx-eslint-rules",
+  "name": "eslint-config-davesnx-rules",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
