@@ -2,10 +2,11 @@ module.exports = {
   parser: 'babel-eslint',
   extends: [
     'plugin:react/recommended',
+    'standard',
+    'standard-jsx',
+    'prettier',
     'prettier/react',
     'prettier-standard',
-    'standard',
-    'standard-jsx'
   ],
   plugins: ['filenames', 'react', 'prettier', 'react-hooks'],
   settings: {
