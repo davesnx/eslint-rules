@@ -8,7 +8,7 @@ module.exports = {
     'prettier/react',
     'prettier/standard'
   ],
-  plugins: ['filenames', 'react', 'standard', 'react-hooks'],
+  plugins: ['filenames', 'prettier', 'react', 'react-hooks'],
   settings: {
     react: {
       version: '16'
@@ -38,6 +38,7 @@ module.exports = {
     'react/display-name': 'warn',
     'react/prop-types': 'warn',
     'react/jsx-no-bind': 0,
+    'prettier/prettier': 'error',
     'react/jsx-handler-names': 'warn',
     curly: 'error',
     'no-shadow': 'warn',
