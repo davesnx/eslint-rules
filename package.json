@@ -2,7 +2,7 @@
   "name": "eslint-config-davesnx-rules",
   "description": "Personal eslint config",
   "version": "0.0.0-semantic-release",
-  "main": "./index.js",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "test": "eslint test/index.js --config ./index.js --quiet"
