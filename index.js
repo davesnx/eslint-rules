@@ -10,7 +10,7 @@ module.exports = {
   plugins: ['filenames', 'react', 'prettier', 'react-hooks'],
   settings: {
     react: {
-      version: '16.2'
+      version: '0.8'
     }
   },
   env: {
