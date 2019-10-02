@@ -1,4 +1,4 @@
-name: Node.js Package
+name: Publish to npm
 
 on:
   pull_request:
@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm ci
+      - run: yarn install
 
   publish-npm:
     needs: build
@@ -27,6 +27,6 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm publish
+      - run: yarn publish --non-interactive
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
