@@ -33,6 +33,7 @@
     "@semantic-release/commit-analyzer": "^6.3.0",
     "@semantic-release/npm": "^5.1.15",
     "@semantic-release/release-notes-generator": "^7.3.0",
+    "cz-conventional-changelog": "3.0.2",
     "eslint": "^6.5.1"
   },
   "release": {
@@ -46,6 +47,11 @@
   "husky": {
     "hooks": {
       "pre-push": "yarn test"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
