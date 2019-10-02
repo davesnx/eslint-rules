@@ -1,17 +1,16 @@
 module.exports = {
   parser: 'babel-eslint',
   extends: [
-    'plugin:react/recommended',
     'standard',
     'standard-jsx',
-    'prettier',
+    'plugin:react/recommended',
     'prettier/react',
-    'prettier/standard'
+    'prettier-standard'
   ],
-  plugins: ['filenames', 'prettier', 'react', 'react-hooks'],
+  plugins: ['filenames', 'react', 'prettier', 'react-hooks'],
   settings: {
     react: {
-      version: '16'
+      version: '16.2'
     }
   },
   env: {
@@ -33,14 +32,15 @@ module.exports = {
   rules: {
     complexity: ['warn', { max: 7 }],
     'filenames/match-regex': ['warn', '^_?[a-z0-9-.]+$'],
+    'prettier/prettier': 'error',
     'react-hooks/rules-of-hooks': 'error',
-    'react/no-unsafe': 'warn',
+    "react/no-unsafe": 'warn',
     'react/display-name': 'warn',
     'react/prop-types': 'warn',
     'react/jsx-no-bind': 0,
-    'prettier/prettier': 'error',
     'react/jsx-handler-names': 'warn',
-    curly: 'error',
+    "react/jsx-fragments": 0,
+    'curly': 'error',
     'no-shadow': 'warn',
     'no-else-return': 'warn',
     'no-nested-ternary': 'warn',
