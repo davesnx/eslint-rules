@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "npx eslint test/index.js --config ./index.js"
+    "test": "npx eslint test/index.js --config ./index.js --quiet"
   },
   "peerDependencies": {
     "eslint": "^6.5.1"
