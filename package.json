@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-davesnx-rules",
   "description": "Personal eslint config",
-  "version": "4.0.0",
+  "version": "0.0.0-semantic-release",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
@@ -23,5 +23,18 @@
     "eslint-plugin-react-hooks": "^2.1.1",
     "eslint-plugin-standard": "^4.0.1",
     "prettier": "^1.18.2"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^6.3.0",
+    "@semantic-release/npm": "^5.1.15",
+    "@semantic-release/release-notes-generator": "^7.3.0"
+  },
+  "release": {
+    "branch": "next",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm"
+    ]
   }
 }
