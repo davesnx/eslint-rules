@@ -30,7 +30,7 @@
     "prettier-config-standard": "^1.0.1"
   },
   "devDependencies": {
-    "@semantic-release/commit-analyzer": "^6.3.0",
+    "@semantic-release/commit-analyzer": "^8.0.0",
     "@semantic-release/npm": "^5.1.15",
     "@semantic-release/release-notes-generator": "^7.3.0",
     "cz-conventional-changelog": "3.0.2",
